@@ -1,0 +1,67 @@
+1.) Git Clone ( which is a copy paste from target to source)
+    target : The Company server's Code
+    source : Company Laptop
+
+    command : git clone {company-repository-url} Note: It should have .git at the end
+
+2.) Creating a Brach:
+    To check the current branch, 
+    command: git branch (The branch in green is the one we are working on)
+    Note: Never Ever work on Master branch directly
+
+    Create a custom branch per ETL Pipeline:
+    To create a branch,
+    command: git branch {your-new-branch-name}
+
+    After Creating a branch, it is important to checkout the branch.
+    Ergo: To work in the new branch created for this new pipeline {your-new-branch-name}
+    command: git checkout {your-new-branch-name}
+
+    To check if you have successfully moved to the new branch
+    command: git branch ( This will show {your-new-branch-name} in green and master will be dim in brightness )
+
+    Now we can start loading our source code files on Github
+
+3.) Adding Files:
+
+    Before Adding the files, we need to always check
+    command: git status 
+    This will show all new, modified files in red. Red means new files not yet loaded on server
+
+    Once A Custom branch is created, We need to store our .py and .sql files on the server
+    command: git add -A 
+
+    After Adding the files, we need to always check
+    command: git status 
+    This will show all modified or new files in green. Green means files ready to be loaded on server
+
+4.) Commiting a File:
+
+    Before Commiting, we need to always check:
+    command: git status
+    NOTE: This should have all files in green.
+
+    After all files are successfully added from #3, we need to commit those files with a message
+    command: git commit -m "{your-custom-message-which-everyone-can-see}"
+
+    After Commit, we need to always check:
+    command: git status
+    This should not have any errors
+
+5.) Pushing files to the server
+
+    Before Pushing Files, we need to check the current branch
+    command: git branch
+    (We discussed previously how to check the current branch)
+
+    After Checking the branch, we need to check the status again
+    command: git status
+    No errors should be there
+
+    Now we push the code in our {your-new-branch-name} branch
+    command: git push origin {your-new-branch-name}
+
+6.) To check if we successfully loaded the files in our branch
+    we need to navigate to the UI, scroll down on {your-new-branch-name} branch and we should be able to see our files.
+
+    
