@@ -1,10 +1,10 @@
-1.) Git Clone ( which is a copy paste from target to source)
+1.) Git Clone (which is a copy paste from target to source)
     target : The Company server's Code
     source : Company Laptop
 
     command : git clone {company-repository-url} Note: It should have .git at the end
 
-2.) Creating a Brach:
+2.) Creating a Branch:
     To check the current branch, 
     command: git branch (The branch in green is the one we are working on)
     Note: Never Ever work on Master branch directly
@@ -18,7 +18,7 @@
     command: git checkout {your-new-branch-name}
 
     To check if you have successfully moved to the new branch
-    command: git branch ( This will show {your-new-branch-name} in green and master will be dim in brightness )
+    command: git branch ( This will show {your-new-branch-name} in green and mapsster will be dim in brightness )
 
     Now we can start loading our source code files on Github
 
@@ -39,7 +39,7 @@
 
     Before Commiting, we need to always check:
     command: git status
-    NOTE: This should have all files in green.
+    NOTE: This should have all files in green
 
     After all files are successfully added from #3, we need to commit those files with a message
     command: git commit -m "{your-custom-message-which-everyone-can-see}"
@@ -64,4 +64,3 @@
 6.) To check if we successfully loaded the files in our branch
     we need to navigate to the UI, scroll down on {your-new-branch-name} branch and we should be able to see our files.
 
-    
