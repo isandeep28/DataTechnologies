@@ -30,7 +30,7 @@
 
     Once A Custom branch is created, We need to store our .py and .sql files on the server
     command: git add -A 
-
+    
     After Adding the files, we need to always check
     command: git status 
     This will show all modified or new files in green. Green means files ready to be loaded on server
